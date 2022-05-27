@@ -1,0 +1,30 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+x = np.arange(0, 6)
+y1 = np.array([120, 120, 120, 120, 120, 120])
+y2 = np.arange(0, 20)
+y3 = np.arange(0, 100)
+y4 = np.arange(0, 70)
+y5 = np.arange(0, 10)
+y6 = np.arange(0, 75)
+y7 = np.arange(0, 30)
+y8 = np.arange(0, 22)
+y9 = np.arange(0, 10)
+y10 = np.arange(0, 50)
+
+plt.plot(x, y1, color="green")
+plt.ylim(0, 140)
+plt.bar(0, y3, color="darkcyan")
+plt.bar(0, y2, color="purple")
+plt.bar(1, y4, color="green")
+plt.bar(1, y5, color="cyan")
+plt.bar(2, y6, color="lightgreen")
+plt.bar(2, y7, color="darkgreen")
+plt.bar(3, y8, color="pink")
+plt.bar(3, y9, color="blue")
+plt.bar(4, y10, color="lime")
+plt.title("Tytuł")
+plt.savefig("zad1.pdf", format="pdf")
+plt.show()
